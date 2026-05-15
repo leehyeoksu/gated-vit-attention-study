@@ -20,14 +20,14 @@ __pycache__/
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# =========================git s
+# =========================
 # MLflow
 # =========================
 mlruns/
 mlruns.db
 
 # =========================
-# Models / Checkpoints
+# Models / Checkpoints (대용량 바이너리)
 # =========================
 *.pth
 *.pt
@@ -42,13 +42,17 @@ logs/
 wandb/
 
 # =========================
-# Dataset (large only)
+# Dataset (대용량)
 # =========================
 data/
 datasets/
 
-# (⚠️ 중요: csv/json 전체 ignore 제거)
-# 대신 필요한 것만 선택적으로 관리
+# =========================
+# 출력물 — 이미지/모델 결과물
+# =========================
+outputs/
+finetuning_gate_and_fc/
+full_fine_tuning_attentionmap_and_gate/
 
 # =========================
 # Environment Variables
@@ -74,4 +78,9 @@ datasets/
 # =========================
 dist/
 build/
-*.egg-info/.env
+*.egg-info/
+
+# =========================
+# 기타 임시 파일
+# =========================
+home/
